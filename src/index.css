@@ -1,0 +1,156 @@
+
+body{
+  background-color: black;
+  color: white;
+ 
+
+}
+.chatbot-container {
+  width: 90%;
+  max-width: 800px; 
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+.input-chatbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.input-chatbox input {
+  width: 70%;
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+}
+
+
+.input-text {
+  padding: 8px;
+  color: #424242;
+  font-weight: 200;
+
+}
+button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.25s;  
+  border: 1px solid transparent;
+
+}
+
+button:hover {
+  border-color: #646cff;
+  transition: ease-out;
+
+}
+.chatbot-prompt {
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+  background-color: #181717;
+  width: 20%;
+  margin-right: 30px;
+  /* top   right  bottom  left*/
+  padding: 9px 30px 9px 15px;
+  border-radius: 9px 3px 19px 15px;
+
+}
+
+.chatbot-response {
+  display: flex;
+  justify-content: flex-start;
+  padding: 9px 30px 9px 30px;
+  align-items: center;
+  background-color: #070606;
+  margin: 20px;
+  border-radius: 3px 9px 9px 19px;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: white;
+    background-color: black;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+}
+/* Mobile styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .chatbot-container {
+    width: 95%; 
+    padding: 10px;
+    height: auto;
+  }
+
+  .input-chatbox {
+ 
+    align-items: flex-start;
+  }
+
+  .input-chatbox input {
+    width: 80%; 
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .chatbot-response-container p {
+    font-size: 14px; 
+  }
+  
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .chatbot-container {
+    width: 85%; 
+  }
+
+  .input-chatbox {
+    flex-direction: row; 
+  }
+
+  .input-chatbox input {
+    width: 80%; 
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .chatbot-container {
+    width: 70%;
+  }
+
+  .input-chatbox input {
+    width: 70%; 
+  }
+}
